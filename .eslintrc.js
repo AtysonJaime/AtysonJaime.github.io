@@ -11,5 +11,19 @@ module.exports = {
   extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'no-console': ['warn', { allow: ['error', 'info'] }],
+    'arrow-parens': 'off',
+    'space-before-function-paren': 'off',
+    'prefer-template': 'error',
+    'prefer-destructuring': [
+      'warn',
+      {
+        array: true,
+        object: true,
+      },
+    ],
+    'object-shorthand': 'warn',
+    camelcase: 'off',
+  },
 }
