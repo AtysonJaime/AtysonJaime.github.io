@@ -1,5 +1,6 @@
 <template lang="pug">
   #main-layout
+    ParticlesComponent
     #inside
       #sidebar
         NavLateral(:isMobile='isMobile')
@@ -9,10 +10,12 @@
 
 <script>
 import NavLateral from '../components/structure/NavLateral.vue'
+import ParticlesComponent from '../components/generics/Particulas.vue'
 export default {
   name: 'IndexPage',
   components: {
     NavLateral,
+    ParticlesComponent,
   },
   data() {
     return {
