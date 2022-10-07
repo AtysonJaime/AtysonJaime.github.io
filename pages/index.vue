@@ -5,16 +5,20 @@
       #sidebar
         NavLateral(:isMobile='isMobile')
       #content.container-fluid.p-0
+        About
         Tutorial
 </template>
 
 <script>
 import NavLateral from '../components/structure/NavLateral.vue'
+import About from '../components/structure/About.vue'
 import ParticlesComponent from '../components/generics/Particulas.vue'
+
 export default {
   name: 'IndexPage',
   components: {
     NavLateral,
+    About,
     ParticlesComponent,
   },
   data() {
@@ -46,6 +50,7 @@ export default {
 
 #main-layout {
   #inside {
+    z-index: 1 !important;
     display: flex;
     flex-direction: row;
   }
@@ -63,9 +68,6 @@ export default {
   #content {
     @include media('>=768px') {
       padding-left: 17rem !important;
-    }
-    @include media('<640px') {
-      padding-top: 56px !important;
     }
   }
 }
