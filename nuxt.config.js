@@ -18,7 +18,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/bootstrapIcons'],
+  plugins: [
+    '~/plugins/bootstrapIcons',
+    { src: '~/plugins/particles', srr: false, mode: 'client' },
+  ],
 
   styleResources: {
     scss: ['assets/sass/main.scss'],
