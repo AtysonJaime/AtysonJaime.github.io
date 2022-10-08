@@ -6,13 +6,14 @@
         NavLateral(:isMobile='isMobile')
       #content.container-fluid.p-0
         About
-        Tutorial
+        ExperienciasJobs
 </template>
 
 <script>
 import NavLateral from '../components/structure/NavLateral.vue'
-import About from '../components/structure/About.vue'
 import ParticlesComponent from '../components/generics/Particulas.vue'
+import About from '../components/structure/About.vue'
+import ExperienciasJobs from '../components/structure/Experiencias.vue'
 
 export default {
   name: 'IndexPage',
@@ -20,6 +21,7 @@ export default {
     NavLateral,
     About,
     ParticlesComponent,
+    ExperienciasJobs,
   },
   data() {
     return {
