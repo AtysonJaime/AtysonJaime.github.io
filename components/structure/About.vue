@@ -1,6 +1,6 @@
 <template lang="pug">
   section#about
-    .content-about.p-4
+    .content-about.p-3
       h1.title-about Atyson Jaime
       h3.subtitle-about Desenvolvedor Front
       p.content-about Desenvolvedor brasileiro e aficionado por tecnologias reais ou virtuais. Iniciei minha trajetória no ano de 2017 e a partir dai minha paixão pela criação e desenvolvimento front-end só cresceram. Em todos esses anos, passei por diversos tipos de tecnologia, mas foi utilizando Vue.js que acabei me aperfeiçoando. Amo estudar e estar antenado a novas tecnologias e desenvolver novas aplicações, podendo produzir e proporcionar soluções interessantes para todos os tipos de usuários, qualquer que sejam suas necessidades.

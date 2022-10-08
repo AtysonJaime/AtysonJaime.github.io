@@ -1,11 +1,10 @@
 <template lang="pug">
-  client-side
-    Particles(
-      id="tsparticles"
-      :particlesInit="particlesInit"
-      :particlesLoaded="particlesLoaded"
-      :options="options"
-    )
+  Particles(
+    id="tsparticles"
+    :particlesInit="particlesInit"
+    :particlesLoaded="particlesLoaded"
+    :options="options"
+  )
 </template>
 <script>
 import { loadFull } from 'tsparticles'

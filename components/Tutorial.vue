@@ -1,6 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
   <div
+    id="formacao"
     class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0"
   >
     <link
