@@ -5,7 +5,7 @@ b-navbar(toggleable="lg" type="dark" fixed='top' v-if='isMobile')
   b-navbar-toggle(target='nav-collapse')
   b-collapse#nav-collapse(is-nav)
     b-nav(vertical role="navigation" aria-label="Menu lateral da página pessoal do Atyson Jaime")
-      b-nav-item(v-for="item in itensMenu" :key="item.id" :to='item.id' exact exact-active-class="active" :alt='item.alt' role='link') {{item.name}}
+      b-nav-item(v-for="item in itensMenu" :key="item.id" :href='item.id' :alt='item.alt' role='link' @click='goToSection($event)') {{item.name}}
 
 <!-- Aside para Desktop -->
 aside.d-flex.flex-column(aria-label='' v-else)
@@ -13,7 +13,7 @@ aside.d-flex.flex-column(aria-label='' v-else)
     b-avatar.border-photo(src="~/assets/img/perfil.jpg" size='10rem' lazy alt='Imagem do Atyson Jaime')
   #aside-nav
     b-nav(vertical role="navigation" aria-label="Menu lateral da página pessoal do Atyson Jaime")
-      b-nav-item(v-for="item in itensMenu" :key="item.id" :to='item.id' exact exact-active-class="active" :alt='item.alt' role='link') {{item.name}}
+      b-nav-item(v-for="item in itensMenu" :key="item.id" :href='item.id' :alt='item.alt' role='link' @click='goToSection($event)') {{item.name}}
 </template>
 
 <script>
@@ -49,6 +49,20 @@ export default {
       ],
     }
   },
+  methods: {
+    goToSection(e) {
+      e.preventDefault()
+      const id = e.target.getAttribute('href')
+      const section = document.querySelector(`${id}`)
+      if (section) {
+        const to = section.offsetTop
+        window.scroll({
+          top: to,
+          behavior: 'smooth',
+        })
+      }
+    },
+  },
 }
 </script>
 
@@ -69,6 +83,7 @@ export default {
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       color: rgba(255, 255, 255, 0.5);
+      scroll-behavior: smooth;
       cursor: pointer;
 
       &:hover,
