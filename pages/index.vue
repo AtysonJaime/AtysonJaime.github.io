@@ -7,6 +7,7 @@
       #content.container-fluid.p-0
         About
         ExperienciasJobs
+        Formacoes
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import NavLateral from '../components/structure/NavLateral.vue'
 import ParticlesComponent from '../components/generics/Particulas.vue'
 import About from '../components/structure/About.vue'
 import ExperienciasJobs from '../components/structure/Experiencias.vue'
+import Formacoes from '../components/structure/Formacao.vue'
 
 export default {
   name: 'IndexPage',
@@ -22,6 +24,7 @@ export default {
     About,
     ParticlesComponent,
     ExperienciasJobs,
+    Formacoes,
   },
   data() {
     return {
