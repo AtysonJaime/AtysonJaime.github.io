@@ -34,7 +34,7 @@ export default {
 footer {
   background-color: #15283c;
   width: 100%;
-  height: 100px;
+  height: 150px;
   position: relative;
   display: flex;
   flex-direction: column;
