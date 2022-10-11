@@ -56,10 +56,17 @@ export default {
       const section = document.querySelector(`${id}`)
       if (section) {
         const to = section.offsetTop
-        window.scroll({
-          top: to,
-          behavior: 'smooth',
-        })
+        if (window.innerWidth < 768) {
+          window.scroll({
+            top: to - 50,
+            behavior: 'smooth',
+          })
+        } else {
+          window.scroll({
+            top: to,
+            behavior: 'smooth',
+          })
+        }
       }
     },
   },
