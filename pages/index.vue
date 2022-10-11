@@ -10,6 +10,7 @@
         Formacoes
         Habilidades
         Portfolio
+        Footer
 </template>
 
 <script>
@@ -20,6 +21,7 @@ import ExperienciasJobs from '../components/structure/Experiencias.vue'
 import Formacoes from '../components/structure/Formacao.vue'
 import Habilidades from '../components/structure/Habilidades.vue'
 import Portfolio from '../components/structure/Portfolio.vue'
+import Footer from '../components/structure/Footer.vue'
 
 export default {
   name: 'IndexPage',
@@ -31,6 +33,7 @@ export default {
     Formacoes,
     Habilidades,
     Portfolio,
+    Footer,
   },
   data() {
     return {
