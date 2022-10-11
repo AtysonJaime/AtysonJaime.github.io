@@ -1,5 +1,5 @@
 <template lang="pug">
-  section#formacao.p-3
+  section#formacao.p-3.light-gray
     h2.titleSection Formações
     CardFormacao(v-for="item in formacao" :key="item.id" :cardForm='item')
 </template>
@@ -39,16 +39,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-@import '../../assets/scss/main';
-#formacao {
-  background-color: #f3f4f6;
-  height: 100vh;
-  width: 100%;
-
-  @include media('<800px') {
-    height: auto;
-  }
-}
-</style>

@@ -35,33 +35,23 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/scss/main';
 #about {
-  position: relative;
-  height: 100vh;
-  width: 100%;
   display: flex;
-
-  @include media('<600px') {
-    height: auto;
-  }
 
   .content-about {
     color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .title-about {
       font-size: calc(94 * 0.06rem);
       font-weight: 800;
       letter-spacing: 0.05rem;
-      padding-top: 6rem;
 
       @include media('<1200px') {
         font-size: calc(80 * 0.06rem);
-        padding-top: 2rem;
-      }
-      @include media('<1050px') {
-        padding-top: 1rem;
       }
       @include media('<841px') {
         font-size: calc(60 * 0.06rem);
-        padding-top: 0;
       }
       @include media('<769px') {
         padding-top: 56px !important;

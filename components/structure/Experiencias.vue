@@ -1,5 +1,5 @@
 <template lang="pug">
-  section#experiencias.p-3
+  section#experiencias.p-3.light-gray
     h2.titleSection Experiências
     CardJobs(v-for="job in experiencias" :key="job.id" :cardJob='job')
     hr.mt-2.mb-3
@@ -17,30 +17,30 @@ export default {
   data() {
     return {
       experiencias: [
-        {
-          id: '00',
-          cargo: 'Desenvolvedor Front-End - Prestador de serviço',
-          empresa: 'Superintendência de TI | UFRN',
-          tempo: 'Desde Setembro de 2022',
-          funcoes: [
-            {
-              id: '00 - STI',
-              info: '> Realizar manutenções, construções e otimizações das interfaces de sites, portais e sistemas gerenciados pela STI.',
-            },
-            {
-              id: '01 - STI',
-              info: '> Organizar e otimizar metas e entregas utilizando metodologia ágil scrum dos portais e sites repassados para desenvolvimento',
-            },
-            {
-              id: '02 - STI',
-              info: '> Realizar palestras sobre tecnologias aos demais membros denominados tech talk;',
-            },
-            {
-              id: '03 - STI',
-              info: '> Ajudar os demais membros e outras equipes com dificuldades relacionadas às tecnologias usadas pela equipe de front, como também, sobre os componentes construídos pela equipe;',
-            },
-          ],
-        },
+        // {
+        //   id: '00',
+        //   cargo: 'Desenvolvedor Front-End - Prestador de serviço',
+        //   empresa: 'Superintendência de TI | UFRN',
+        //   tempo: 'Desde Setembro de 2022',
+        //   funcoes: [
+        //     {
+        //       id: '00 - STI',
+        //       info: '> Realizar manutenções, construções e otimizações das interfaces de sites, portais e sistemas gerenciados pela STI.',
+        //     },
+        //     {
+        //       id: '01 - STI',
+        //       info: '> Organizar e otimizar metas e entregas utilizando metodologia ágil scrum dos portais e sites repassados para desenvolvimento',
+        //     },
+        //     {
+        //       id: '02 - STI',
+        //       info: '> Realizar palestras sobre tecnologias aos demais membros denominados tech talk;',
+        //     },
+        //     {
+        //       id: '03 - STI',
+        //       info: '> Ajudar os demais membros e outras equipes com dificuldades relacionadas às tecnologias usadas pela equipe de front, como também, sobre os componentes construídos pela equipe;',
+        //     },
+        //   ],
+        // },
         {
           id: '01',
           cargo: 'Desenvolvedor Front-End - Bolsista',
@@ -134,9 +134,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-#experiencias {
-  background-color: #f3f4f6;
-}
-</style>

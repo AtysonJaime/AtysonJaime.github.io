@@ -42,7 +42,7 @@ export default {
           alt: 'Ir para a sessão Habilidades',
         },
         {
-          id: '#portifolio',
+          id: '#portfolio',
           name: 'portfólio',
           alt: 'Ir para a sessão portfólio',
         },
