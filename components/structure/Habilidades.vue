@@ -103,6 +103,7 @@ export default {
           info: '+ Testing & Debugging: E2E e Javascript usando Cypress como framework',
         },
         { id: '02 - W', info: '+ Desenvolvimento Ágil e Scrum' },
+        { id: '03 - W', info: '+ Ingles intermediário' },
       ],
     }
   },
