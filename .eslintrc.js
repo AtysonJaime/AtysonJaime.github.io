@@ -24,6 +24,7 @@ module.exports = {
       },
     ],
     'object-shorthand': 'warn',
+    'no-unused-vars': 'off',
     camelcase: 'off',
   },
 }

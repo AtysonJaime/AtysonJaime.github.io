@@ -73,7 +73,7 @@ export default {
           funcoes: [
             {
               id: '00 - UP3',
-              info: '> Construção de layout e manutenção para um sistema web',
+              info: '> Construção de layout e manutenção para um sistema web de uma empresa localizada em Miami, Flórida',
             },
           ],
         },
