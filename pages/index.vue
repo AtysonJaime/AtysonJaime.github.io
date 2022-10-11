@@ -8,6 +8,7 @@
         About
         ExperienciasJobs
         Formacoes
+        Habilidades
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import ParticlesComponent from '../components/generics/Particulas.vue'
 import About from '../components/structure/About.vue'
 import ExperienciasJobs from '../components/structure/Experiencias.vue'
 import Formacoes from '../components/structure/Formacao.vue'
+import Habilidades from '../components/structure/Habilidades.vue'
 
 export default {
   name: 'IndexPage',
@@ -25,6 +27,7 @@ export default {
     ParticlesComponent,
     ExperienciasJobs,
     Formacoes,
+    Habilidades,
   },
   data() {
     return {
