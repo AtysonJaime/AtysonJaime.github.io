@@ -9,6 +9,7 @@
         ExperienciasJobs
         Formacoes
         Habilidades
+        Portfolio
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import About from '../components/structure/About.vue'
 import ExperienciasJobs from '../components/structure/Experiencias.vue'
 import Formacoes from '../components/structure/Formacao.vue'
 import Habilidades from '../components/structure/Habilidades.vue'
+import Portfolio from '../components/structure/Portfolio.vue'
 
 export default {
   name: 'IndexPage',
@@ -28,13 +30,14 @@ export default {
     ExperienciasJobs,
     Formacoes,
     Habilidades,
+    Portfolio,
   },
   data() {
     return {
       isMobile: false,
     }
   },
-  mounted() {
+  beforeMount() {
     window.addEventListener('resize', this.onResize)
     this.onResize()
   },
@@ -57,6 +60,34 @@ export default {
 @import '../assets/scss/main';
 
 #main-layout {
+  background-color: $black;
+
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  .light-gray {
+    background-color: $light-gray !important;
+  }
+
+  .titleSection {
+    text-decoration: underline;
+    font-size: calc(50 * 0.06rem);
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+    font-weight: 700;
+    line-height: 1.2;
+
+    &.dark {
+      color: $white;
+    }
+  }
+
   #inside {
     z-index: 1 !important;
     display: flex;
