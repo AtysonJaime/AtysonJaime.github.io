@@ -92,7 +92,7 @@ export default {
             descricao:
               'Portal do Sistema de Bibliotecas (SISBI) da Universidade Federal do Rio Grande do Norte (UFRN), utilizando o consumo do GESTORE e da API da UFRN para as informações presentes no site.',
             tecnologias: 'Nuxt.js, Pug.js, Sass, Gestore, API da UFRN',
-            link: 'https://sisbi-temp.info.ufrn.br',
+            link: 'https://sisbi.ufrn.br/',
             linkTelas: '',
             ahLink: true,
             ahLinkTelas: false,
