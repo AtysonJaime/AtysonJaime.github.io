@@ -40,6 +40,10 @@ $ npm run generate
 
 Para mais detalhes de como esses codigos funcionam, acessem a documentação do [NuxtJs](https://nuxtjs.org).
 
+## 🖼️ Deploy
+
+O projeto encontra-se hospedado no [Github](https://github.com/), utilizando a plataforma do github pages. Para visualizar, [click aqui](https://atysonjaime.github.io)
+
 ## 📝 Licença
 
 [MIT License](https://github.com/AtysonJaime/AtysonJaime.github.io/blob/master/LICENCE) © [Atyson Jaime](https://atysonjaime.github.io)
