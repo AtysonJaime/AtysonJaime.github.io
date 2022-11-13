@@ -34,6 +34,23 @@ export default {
         },
         {
           id: '01P',
+          name: 'FavTube',
+          src: require('~/assets/img/favTube/capa.png'),
+          modal: {
+            subtitle: 'Pessoal',
+            descricao:
+              '🚀 Construção de uma replica do youtube utilizando React e Next desenvolvido na Imersão React 2022 proporcionado pela Alura.',
+            tecnologias: 'React.Js, Next.js, Html, Css, Js, Supabase, Vercel',
+            link: 'https://aluratube-atysonjaime.vercel.app',
+            linkTelas: '',
+            ahLinkTelas: false,
+            ahLink: true,
+            ahCarrosel: false,
+            photos: [],
+          },
+        },
+        {
+          id: '02P',
           name: 'ENADE',
           src: require('~/assets/img/enade/capa.png'),
           modal: {
@@ -50,7 +67,7 @@ export default {
           },
         },
         {
-          id: '02P',
+          id: '03P',
           name: 'SIA',
           src: require('~/assets/img/sia/capa.png'),
           modal: {
@@ -67,7 +84,7 @@ export default {
           },
         },
         {
-          id: '03P',
+          id: '04P',
           name: 'SISU',
           src: require('~/assets/img/sisu/capa.png'),
           modal: {
@@ -84,7 +101,7 @@ export default {
           },
         },
         {
-          id: '04P',
+          id: '05P',
           name: 'SISBI',
           src: require('~/assets/img/sisbi/capa.png'),
           modal: {
@@ -101,7 +118,7 @@ export default {
           },
         },
         {
-          id: '05P',
+          id: '06P',
           name: 'GESTORE',
           src: require('~/assets/img/gestore/capa.png'),
           modal: {
@@ -139,7 +156,7 @@ export default {
           },
         },
         {
-          id: '06P',
+          id: '07P',
           name: 'Design System da UFRN',
           src: require('~/assets/img/ds/capa.png'),
           modal: {
@@ -170,7 +187,7 @@ export default {
           },
         },
         {
-          id: '07P',
+          id: '08P',
           name: 'Docentes',
           src: require('~/assets/img/docentes/capa.png'),
           modal: {
@@ -187,7 +204,7 @@ export default {
           },
         },
         {
-          id: '08P',
+          id: '09P',
           name: 'Pós-Graduação',
           src: require('~/assets/img/pg/capa.png'),
           modal: {
@@ -204,7 +221,7 @@ export default {
           },
         },
         {
-          id: '09P',
+          id: '10P',
           name: 'Outros projetos da STI',
           src: require('~/assets/img/sti/capa.png'),
           modal: {
@@ -220,7 +237,7 @@ export default {
           },
         },
         {
-          id: '10P',
+          id: '11P',
           name: 'CTS Receivership',
           src: require('~/assets/img/cts/capa.png'),
           modal: {
