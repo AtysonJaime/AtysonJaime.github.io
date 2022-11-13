@@ -62,21 +62,31 @@ export default {
         },
         {
           id: '08 - T',
+          src: require('~/assets/img/icons-react.svg'),
+          title: 'React.js',
+        },
+        {
+          id: '09 - T',
+          src: require('~/assets/img/nextjs-icon.svg'),
+          title: 'Next.js',
+        },
+        {
+          id: '10 - T',
+          src: require('~/assets/img/icons-node-js.svg'),
+          title: 'Node.js',
+        },
+        {
+          id: '11 - T',
           src: require('~/assets/img/icons-npm.svg'),
           title: 'npm',
         },
         {
-          id: '09 - T',
-          src: require('~/assets/img/icons-bootstrap.svg'),
-          title: 'Framework Bootstrap',
-        },
-        {
-          id: '10 - T',
+          id: '12 - T',
           src: require('~/assets/img/icons-git.svg'),
           title: 'Git',
         },
         {
-          id: '11 - T',
+          id: '13 - T',
           src: require('~/assets/img/php-icon.svg'),
           title: 'PHP',
         },
