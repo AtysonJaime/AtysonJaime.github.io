@@ -4,16 +4,17 @@
     .content-habilidades
       h4.subtitleSection > Tecnologias e Ferramentas
       .content-avatar
-        AvatarIcon(v-for="avatar in tecnologias" :key="avatar.id" :title='avatar.title' :src='avatar.src')
+        AvatarIcon(v-for="avatar in habilidades.tecnologias" :key="avatar.id" :title='avatar.title' :src='avatar.src')
       h4.subtitleSection > Integração Front com Back
       .content-avatar
-        AvatarIcon(v-for="avatar in integracoes" :key="avatar.id" :title='avatar.title' :src='avatar.src')
+        AvatarIcon(v-for="avatar in habilidades.integracoes" :key="avatar.id" :title='avatar.title' :src='avatar.src')
       h4.subtitleSection > Workflow
       ul.list-group
-        li.list-group-item(v-for="item in workflow" :key="item.id") {{item.info}}
+        li.list-group-item(v-for="item in habilidades.workflow" :key="item.id") {{item.info}}
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import AvatarIcon from '../generics/AvatarIcon.vue'
 export default {
   name: 'SectionHabilidades',
@@ -22,100 +23,8 @@ export default {
     AvatarIcon,
   },
 
-  data() {
-    return {
-      tecnologias: [
-        {
-          id: '00 - T',
-          src: require('~/assets/img/icons-html-5.svg'),
-          title: 'HTML5',
-        },
-        {
-          id: '01 - T',
-          src: require('~/assets/img/icons-css3.svg'),
-          title: 'CSS3',
-        },
-        {
-          id: '02 - T',
-          src: require('~/assets/img/icons-javascript.svg'),
-          title: 'Javascript',
-        },
-        {
-          id: '03 - T',
-          src: require('~/assets/img/icons-sass.svg'),
-          title: 'Sass',
-        },
-        {
-          id: '05 - T',
-          src: require('~/assets/img/pugjs-icon.svg'),
-          title: 'Pug.js',
-        },
-        {
-          id: '06 - T',
-          src: require('~/assets/img/icons-vue-js.svg'),
-          title: 'Vue.JS',
-        },
-        {
-          id: '07 - T',
-          src: require('~/assets/img/nuxtjs-icon.svg'),
-          title: 'Nuxt.Js',
-        },
-        {
-          id: '08 - T',
-          src: require('~/assets/img/icons-react.svg'),
-          title: 'React.js',
-        },
-        {
-          id: '09 - T',
-          src: require('~/assets/img/nextjs-icon.svg'),
-          title: 'Next.js',
-        },
-        {
-          id: '10 - T',
-          src: require('~/assets/img/icons-node-js.svg'),
-          title: 'Node.js',
-        },
-        {
-          id: '11 - T',
-          src: require('~/assets/img/icons-npm.svg'),
-          title: 'npm',
-        },
-        {
-          id: '12 - T',
-          src: require('~/assets/img/icons-git.svg'),
-          title: 'Git',
-        },
-        {
-          id: '13 - T',
-          src: require('~/assets/img/php-icon.svg'),
-          title: 'PHP',
-        },
-      ],
-      integracoes: [
-        {
-          id: '00 - I',
-          src: require('~/assets/img/icons-thymeleaf.svg'),
-          title: 'Thymeleaf',
-        },
-        {
-          id: '01 - I',
-          src: require('~/assets/img/laravel-icon.svg'),
-          title: 'Laravel',
-        },
-      ],
-      workflow: [
-        {
-          id: '00 - W',
-          info: '+ Mobile-First, Design responsivo, Acessibilidade',
-        },
-        {
-          id: '01 - W',
-          info: '+ Testing & Debugging: E2E e Javascript usando Cypress como framework',
-        },
-        { id: '02 - W', info: '+ Desenvolvimento Ágil e Scrum' },
-        { id: '03 - W', info: '+ Ingles intermediário' },
-      ],
-    }
+  computed: {
+    ...mapState('habilidades', ['habilidades']),
   },
 }
 </script>
