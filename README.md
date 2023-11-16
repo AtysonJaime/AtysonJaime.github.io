@@ -38,7 +38,7 @@ $ npm run start
 $ npm run generate
 ```
 
-Para mais detalhes de como esses codigos funcionam, acessem a documentação do [NuxtJs](https://nuxtjs.org).
+Para mais detalhes de como esses códigos funcionam, acessem a documentação do [NuxtJs](https://nuxtjs.org).
 
 ## 🖼️ Deploy
 
