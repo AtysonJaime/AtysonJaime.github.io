@@ -5,12 +5,12 @@
 
 > 📖 Projeto desenvolvido com o intuito de apresentar minha jornada como desenvolvedor front-end e mostrar todo os sites e sistemas que já desenvolvi ao longo da minha carreira.
 
-## 📱 Social Midias
+## 📱 Social Mídias
 
 [![https://github.com/AtysonJaime](https://img.shields.io/badge/-Github-%23333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AtysonJaime)
 [![https://www.linkedin.com/in/atyson-jaime-91783a148/](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/atyson-jaime-91783a148/)
 
-## 💻 Tecnológias
+## 💻 Tecnologias
 
 Esse projeto utiliza-se das seguintes tecnologias:
 
