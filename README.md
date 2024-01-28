@@ -15,11 +15,12 @@
 Esse projeto utiliza-se das seguintes tecnologias:
 
 - JavaScript e JSON
-- [Node e NPM](https://nodejs.org/en/)
+- [Node](https://nodejs.org/en/)
+- [PNPM](https://pnpm.io/)
 - [VueJs](vuejs.org/)
 - [NuxtJs](https://nuxtjs.org)
-- SASS
-- Pug
+- [SASS](https://sass-lang.com/)
+- [Bulma](https://bulma.io/)
 
 ## 🏗️ Build Setup
 

@@ -1,0 +1,88 @@
+@function pxToVw($px) {
+  @return calc($px / 1920) * 100dvw;
+}
+
+html,
+body {
+  overflow: auto;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+span,
+a,
+button,
+input,
+textarea,
+option,
+div,
+li {
+  font-family: "Poppins", sans-serif !important;
+}
+
+h1 {
+  font-size: pxToVw(93) !important;
+  line-height: 110% !important;
+  letter-spacing: -0.0938rem !important;
+}
+
+h2 {
+  font-size: pxToVw(58) !important;
+  line-height: 110% !important;
+  letter-spacing: -0.0313rem !important;
+}
+
+h3 {
+  font-size: pxToVw(43) !important;
+  line-height: 110% !important;
+  letter-spacing: 0% !important;
+}
+
+h4 {
+  font-size: pxToVw(33) !important;
+  line-height: 120% !important;
+  letter-spacing: 0.0156rem !important;
+}
+
+h5 {
+  font-size: pxToVw(24) !important;
+  line-height: 120% !important;
+  letter-spacing: 0% !important;
+}
+
+h6 {
+  font-size: pxToVw(19) !important;
+  line-height: 120% !important;
+  letter-spacing: 0.0094rem !important;
+}
+
+p,
+a,
+button,
+li,
+span {
+  font-size: pxToVw(16) !important;
+  line-height: 150% !important;
+  letter-spacing: 0.0094rem !important;
+}
+
+small {
+  font-size: pxToVw(14) !important;
+  line-height: 150% !important;
+  letter-spacing: 0.0063rem !important;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
