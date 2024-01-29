@@ -1,6 +1,7 @@
 <template>
   <div class="portfolio-content">
     <div class="header-aside-content">
+      <Header/>
     </div>
     <main class="main-content">
       <NuxtPage />
@@ -11,9 +12,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import Header from "./components/boxHeader.vue";
 
 export default defineComponent({
   name: "PortfolioApp",
+
+  components: {
+    Header,
+  }
 });
 </script>
 <style lang="scss">
@@ -35,6 +41,8 @@ export default defineComponent({
   .header-aside-content {
     background-color: var(--primary-dark);
     border-right: 0.0625rem solid var(--light-dark);
+    display: flex;
+    flex-direction: column;
   }
 
   .main-content {
