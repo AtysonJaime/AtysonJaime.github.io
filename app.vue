@@ -1,9 +1,10 @@
 <template>
   <div class="portfolio-content">
-    <div class="header-aside-content">
-      <Header/>
-    </div>
+    <aside v-if="!isMobile" class="aside-content">
+      <BoxHeader />
+    </aside>
     <main class="main-content">
+      <BoxHeader v-if="isMobile" />
       <NuxtPage />
       <!-- Footer -->
     </main>
@@ -12,14 +13,39 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "./components/boxHeader.vue";
+import BoxHeader from "./components/boxHeader.vue";
 
 export default defineComponent({
   name: "PortfolioApp",
 
   components: {
-    Header,
-  }
+    BoxHeader,
+  },
+
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
+
+  beforeMount() {
+    this.windowResizeIs992();
+    window.addEventListener("resize", this.windowResizeIs992);
+  },
+
+  methods: {
+    /**
+     * Sets the isMobile property based on the window width
+     */
+    windowResizeIs992() {
+      console.log("Entrei aqui");
+      if (window.innerWidth < 992) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    },
+  },
 });
 </script>
 <style lang="scss">
@@ -38,17 +64,22 @@ export default defineComponent({
   display: grid;
   grid-template-columns: 16rem auto;
 
-  .header-aside-content {
+  .aside-content {
     background-color: var(--primary-dark);
     border-right: 0.0625rem solid var(--light-dark);
     display: flex;
     flex-direction: column;
+    height: 100dvh;
   }
 
   .main-content {
     min-height: 100dvh;
     overflow: auto;
     background-color: var(--light-dark);
+  }
+
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
   }
 }
 </style>
