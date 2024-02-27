@@ -38,7 +38,6 @@ export default defineComponent({
      * Sets the isMobile property based on the window width
      */
     windowResizeIs992() {
-      console.log("Entrei aqui");
       if (window.innerWidth < 992) {
         this.isMobile = true;
       } else {

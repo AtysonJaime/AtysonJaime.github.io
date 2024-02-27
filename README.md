@@ -14,13 +14,15 @@
 
 Esse projeto utiliza-se das seguintes tecnologias:
 
-- JavaScript e JSON
+- [Typescript](https://www.typescriptlang.org/)
 - [Node](https://nodejs.org/en/)
 - [PNPM](https://pnpm.io/)
 - [VueJs](vuejs.org/)
 - [NuxtJs](https://nuxtjs.org)
 - [SASS](https://sass-lang.com/)
 - [Bulma](https://bulma.io/)
+- [I18N](https://i18n.nuxtjs.org/)
+- [Pinia](https://pinia.vuejs.org/)
 
 ## 🏗️ Build Setup
 

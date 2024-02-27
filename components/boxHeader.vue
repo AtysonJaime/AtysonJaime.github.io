@@ -13,10 +13,7 @@
         />
       </a>
       <div class="navbar-ends">
-        <!-- TODO: Criar componente de toggle language -->
-        <div class="navbar-item toggle-language checkbox">
-          <input id="toggle-language" type="checkbox" />
-        </div>
+        <ToggleLanguage />
         <!-- TODO: Criar componente de dropdown sessões -->
       </div>
     </div>
@@ -25,9 +22,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import ToggleLanguage from "./toggleLanguage.vue";
 
 export default defineComponent({
   name: "BoxHeader",
+
+  components: {
+    ToggleLanguage,
+  },
 });
 </script>
 
