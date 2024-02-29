@@ -1,8 +1,24 @@
 <template>
   <div class="portfolio-content">
+    <Head>
+      <Title>{{ $t("head.title") }}</Title>
+      <Meta name="description" :content="$t('head.description')" />
+      <Meta name="og:title" :content="$t('head.title')" />
+      <Meta name="og:description" :content="$t('head.description')" />
+      <Meta name="og:site_name" :content="$t('head.title')" />
+      <Meta name="og:image" content="/logo.svg" />
+    </Head>
+
     <aside v-if="!isMobile" class="aside-content">
       <BoxHeader />
+      <div class="img-menu-content">
+        <div class="img-perfil-ai">
+          <img src="/perfil-ia.jpg" :alt="$t('perfilAiAlt')" />
+        </div>
+        <ListMenu />
+      </div>
     </aside>
+
     <main class="main-content">
       <BoxHeader v-if="isMobile" />
       <NuxtPage />
@@ -14,12 +30,14 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import BoxHeader from "./components/boxHeader.vue";
+import ListMenu from "./components/listMenu.vue";
 
 export default defineComponent({
   name: "PortfolioApp",
 
   components: {
     BoxHeader,
+    ListMenu,
   },
 
   data() {
@@ -69,6 +87,29 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     height: 100dvh;
+
+    .img-menu-content {
+      height: calc(100dvh - 5.375rem);
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    .img-perfil-ai {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+        border: 0.25rem solid var(--dark);
+        border-radius: 50%;
+        width: 12.5rem;
+        height: 12.5rem;
+      }
+    }
   }
 
   .main-content {

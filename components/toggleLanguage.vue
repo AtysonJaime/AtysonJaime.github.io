@@ -3,15 +3,15 @@
     <input
       id="toggle-language"
       type="checkbox"
-      :title="$t('toggleLanguage')"
-      :aria-label="$t('toggleLanguage')"
+      :title="$t('toggle.title')"
+      :aria-label="$t('toggle.title')"
       :checked="$i18n.locale === 'en'"
       @change="changeLanguage($event)"
     />
     <label
       for="toggle-language"
-      :title="$t('toggleLanguage')"
-      :aria-label="$t('toggleLanguage')"
+      :title="$t('toggle.title')"
+      :aria-label="$t('toggle.title')"
     >
     </label>
   </div>

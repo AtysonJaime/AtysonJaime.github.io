@@ -24,20 +24,10 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Atyson Jaime - Portfólio",
-
       meta: [
         { charset: "utf-8" },
 
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-
-        {
-          hid: "description",
-
-          name: "description",
-
-          content: "Portfólio do Atyson Jaime",
-        },
 
         { name: "format-detection", content: "telephone=no" },
 
@@ -60,35 +50,11 @@ export default defineNuxtConfig({
         { hid: "og:type", name: "og:type", content: "website" },
 
         {
-          hid: "og:title",
-
-          name: "og:title",
-
-          content: "Portfólio - Atyson Jaime",
-        },
-
-        {
-          hid: "og:description",
-
-          name: "og:description",
-
-          content: "Portfólio do Atyson Jaime",
-        },
-
-        {
           hid: "og:url",
 
           name: "og:url",
 
           content: "https://atysonjaime.github.io",
-        },
-
-        {
-          hid: "og:site_name",
-
-          name: "og:site_name",
-
-          content: "Portfólio - Atyson Jaime",
         },
 
         {

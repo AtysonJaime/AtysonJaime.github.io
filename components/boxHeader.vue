@@ -4,13 +4,10 @@
       <a
         class="logo-content navbar-item"
         href="/"
-        title="Ir para o portfolio de Atyson Jaime"
-        aria-label="Ir para o portfolio de Atyson Jaime"
+        :title="$t('header.title')"
+        :aria-label="$t('header.title')"
       >
-        <img
-          src="/logo.svg"
-          alt="Logo branca do portfolio de Atyson Jaime: Um anagrama contento as letras A e J juntas, com um desenho de um computador dentro do anagrama. Nele, pode-se ver uma engrenagem no lado esquerdo e linhas de código com o simbolo de html no lado direito. Além disso, ao lado do anagrama, temos o nome Frontend Developer."
-        />
+        <img src="/logo.svg" :alt="$t('header.alt')" />
       </a>
       <div class="navbar-ends">
         <ToggleLanguage />
