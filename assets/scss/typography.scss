@@ -1,11 +1,18 @@
-@function pxToVw($px) {
-  //TODO: Alterar para conc
-  @return calc($px / 1920) * 100dvw;
+:root {
+  --tam-h1: clamp(3.75rem, 0.8906rem + 8.75vw, 5.8125rem);
+  --tam-h2: clamp(2.8125rem, 1.5156rem + 3.75vw, 3.625rem);
+  --tam-h3: clamp(2.1875rem, 1.2813rem + 2.5vw, 2.6875rem);
+  --tam-h4: clamp(1.75rem, 1.3594rem + 1.25vw, 2.0625rem);
+  --tam-h5: 24px;
+  --tam-h6: 20px;
+  --tam-p: 16px;
+  --tam-small: 14px;
 }
 
 html,
 body {
   overflow: auto;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -29,37 +36,37 @@ li {
 }
 
 h1 {
-  font-size: pxToVw(93) !important;
+  font-size: var(--tam-h1) !important;
   line-height: 110% !important;
   letter-spacing: -0.0938rem !important;
 }
 
 h2 {
-  font-size: pxToVw(58) !important;
+  font-size: var(--tam-h2) !important;
   line-height: 110% !important;
   letter-spacing: -0.0313rem !important;
 }
 
 h3 {
-  font-size: pxToVw(43) !important;
+  font-size: var(--tam-h3) !important;
   line-height: 110% !important;
   letter-spacing: 0% !important;
 }
 
 h4 {
-  font-size: pxToVw(33) !important;
+  font-size: var(--tam-h4) !important;
   line-height: 120% !important;
   letter-spacing: 0.0156rem !important;
 }
 
 h5 {
-  font-size: pxToVw(24) !important;
+  font-size: var(--tam-h5) !important;
   line-height: 120% !important;
   letter-spacing: 0% !important;
 }
 
 h6 {
-  font-size: pxToVw(19) !important;
+  font-size: var(--tam-h6) !important;
   line-height: 120% !important;
   letter-spacing: 0.0094rem !important;
 }
@@ -69,13 +76,13 @@ a,
 button,
 li,
 span {
-  font-size: pxToVw(16) !important;
+  font-size: var(--tam-p) !important;
   line-height: 150% !important;
   letter-spacing: 0.0094rem !important;
 }
 
 small {
-  font-size: pxToVw(14) !important;
+  font-size: var(--tam-small) !important;
   line-height: 150% !important;
   letter-spacing: 0.0063rem !important;
 }

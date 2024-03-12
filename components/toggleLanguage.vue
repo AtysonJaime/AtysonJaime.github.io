@@ -20,17 +20,20 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useLanguageStore } from "~/stores/language";
+import { useMenuStore } from "~/stores/menu";
 
 export default defineComponent({
   name: "ToggleLanguage",
   setup() {
     // Puxa os atributos do store
     const language = useLanguageStore();
+    const menu = useMenuStore();
     const locale = computed(() => language.locale);
     const { setLocale } = language;
     return {
       locale,
       setLocale,
+      menu,
     };
   },
 
@@ -43,6 +46,7 @@ export default defineComponent({
       // @ts-ignore
       this.$i18n.setLocale(this.locale);
     }
+    this.menu.setItens(this.$t);
   },
 
   methods: {
@@ -57,6 +61,9 @@ export default defineComponent({
         // @ts-ignore
         this.$i18n.setLocale("pt-br");
       }
+      setTimeout(() => {
+        this.menu.setItens(this.$t);
+      }, 500);
     },
   },
 });
